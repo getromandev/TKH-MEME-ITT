@@ -11,7 +11,7 @@
           <input type="text" placeholder="Search" />
       </div>
       <div class='col'>
-          <input id="URL" type="text" placeholder="Enter URL" />
+          <input id="URL" type="text" placeholder="Enter URL" onchange="uploadURL()" />
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
     <div class="row">
       <h1>Results</h1>
     </div>
-    <div class="row"></div>
+    <div id="results" class="row"></div>
   </div>
 
   <script>
@@ -31,6 +31,16 @@
 
       memeBox.push(url);
       alert(url + ' was uploaded!');
+
+      displayAllMemes();
+    }
+
+    function displayAllMemes(){
+      document.getElementById('results').innerHTML = '';
+
+      for(var i = 0; i < memeBox.length; i++){
+        document.getElementById('results').innerHTML += '<img src="'+ memeBox[i] +'">';
+      }
     }
 
   </script>
