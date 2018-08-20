@@ -11,7 +11,7 @@
           <input type="text" placeholder="Search" />
       </div>
       <div class='col'>
-          <input type="text" placeholder="Enter URL" />
+          <input id="URL" type="text" placeholder="Enter URL" />
       </div>
     </div>
   </div>
@@ -24,7 +24,15 @@
   </div>
 
   <script>
-    var arr memeBox = [];
+    var memeBox = [];
+
+    function uploadURL(){
+      var url = document.getElementById('URL').value;
+
+      memeBox.push(url);
+      alert(url + ' was uploaded!');
+    }
+
   </script>
 </body>
 </html>
