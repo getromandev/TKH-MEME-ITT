@@ -39,8 +39,8 @@
     }
   };
 
-//   // this function sole purpose is to grab the input and find the img url
-  function searchMeme(){
+// this function sole purpose is to grab the input and find the img url
+  function search(){
 
     // get the value that is inputed in the input box
     var searchText = document.getElementById("search").value.toLowerCase();
@@ -58,26 +58,3 @@
       }
     }
   }
-
-  // The effecient way of doing the searchMeme function
-  // function search(){
-	// 			var input = document.getElementById("search").value;
-  //
-	// 			document.getElementById('results').innerHTML = '';
-  //
-	// 			for(var i=0; i< memeBox.length; i++){
-	// 				//search meme by name
-	// 				if(input == memeBox[i].name) {
-	// 					document.getElementById('results').innerHTML += '<img src="'+ memeBox[i].url +'">';
-	// 					continue; //skips to the next object in the array, doesn't bother searching by tags
-	// 				}
-  //
-	// 				//search meme by its tags
-	// 				for(var j = 0; j < memeBox[i].tags.length; j++){
-	// 					if (input == memeBox[i].tags[j]) {
-	// 						document.getElementById('results').innerHTML += '<img src="'+ memeBox[i].url +'">';
-	// 						break; //stops this loop from running anymore
-	// 					}
-	// 				}
-	// 			}
-	// 		}
