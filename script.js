@@ -1,13 +1,13 @@
 // global array that every function has access to
- var memeBox =[]
+ var memeBox =[];
 
  // function definition that will create a url for the meme
  function uploadMeme(){
 
    // create variables to get the value of the inputs in order to construct the object
     var n = document.getElementById("name").value.toLowerCase();
-    var t = document.getElementById("tag").value.split(" ")
-    var u = document.getElementById("url").value
+    var t = document.getElementById("tag").value.split(" ");
+    var u = document.getElementById("url").value;
 
     // Object construct
     var meme = {
@@ -35,11 +35,11 @@
 
     // loop through the array and appen the img URL and img html element node to the DOM
     for(var i = 0; i < memeBox.length; i++){
-      display.innerHTML += '<img src="' + memeBox[i].url + '">'
+      display.innerHTML += `<li class='list-group-item'><img src=${memeBox[i].url} /></li>`
     }
   };
 
-  // this function sole purpose is to grab the input and find the img url
+//   // this function sole purpose is to grab the input and find the img url
   function searchMeme(){
 
     // get the value that is inputed in the input box
@@ -58,3 +58,26 @@
       }
     }
   }
+
+  // The effecient way of doing the searchMeme function
+  // function search(){
+	// 			var input = document.getElementById("search").value;
+  //
+	// 			document.getElementById('results').innerHTML = '';
+  //
+	// 			for(var i=0; i< memeBox.length; i++){
+	// 				//search meme by name
+	// 				if(input == memeBox[i].name) {
+	// 					document.getElementById('results').innerHTML += '<img src="'+ memeBox[i].url +'">';
+	// 					continue; //skips to the next object in the array, doesn't bother searching by tags
+	// 				}
+  //
+	// 				//search meme by its tags
+	// 				for(var j = 0; j < memeBox[i].tags.length; j++){
+	// 					if (input == memeBox[i].tags[j]) {
+	// 						document.getElementById('results').innerHTML += '<img src="'+ memeBox[i].url +'">';
+	// 						break; //stops this loop from running anymore
+	// 					}
+	// 				}
+	// 			}
+	// 		}
