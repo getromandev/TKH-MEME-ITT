@@ -1,5 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   background: url(img/geeky-shots-687868-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  margin: 0;
 }
+
+.builtByGetromanContainer {
+  text-align: center;
+}
+
+.content {
+  min-height: 95%;
+  margin: 0 auto -50px;
+  margin-bottom: -50px;
+}
+
+.getromanLogo {
+  height: 75px;
+  width: 75px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+footer {
+  color: white;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.upTopRoom {
+  padding-top: 15px;
+}
+

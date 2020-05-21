@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Project Meme</title>
-
-
-<!--     BootStrap     -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<button onclick="search()">Show Results</button>
-				<!-- <input id="search" type="textbox" placeholder="search" onChange="searchMeme()">
-       -->
-       <input id="search" type="textbox" placeholder="search">
-			</div>
-			<div class="col">
-				<button onclick="uploadMeme()"> Add</button>
-				<input id= "name" type="textbox" placeholder="Name">
-				<input id= "tag" type="textbox" placeholder="Tags">
-				<input id= "url" type="textbox" placeholder="URL">
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col pt-5">
-				<div id="result" class="card" style="width: 33rem;">
-					<ul class="list-group list-group-flush">
-
-					</ul>
+	<head>
+		<title>Project Meme</title>
+		
+		
+		<!--     BootStrap     -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div class="content">
+		<div class="container-fluid upTopRoom">
+			<div class="row">
+				<div class="col">
+					<button onclick="search()">Show Results</button>
+					<!-- <input id="search" type="textbox" placeholder="search" onChange="searchMeme()">
+		-->
+		<input id="search" type="textbox" placeholder="search">
+				</div>
+				<div class="col">
+					<button onclick="uploadMeme()"> Add</button>
+					<input id= "name" type="textbox" placeholder="Name">
+					<input id= "tag" type="textbox" placeholder="Tags">
+					<input id= "url" type="textbox" placeholder="URL">
 				</div>
 			</div>
 		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col pt-5">
+					<div id="result" class="card" style="width: 33rem;">
+						<ul class="list-group list-group-flush">
+		
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="push"></div>
 	</div>
+	<footer>
+		<div class="builtByGetromanContainer">
+			<img src="/img/Built_by_dark_badge.png" alt="Getroman Logo" class="getromanLogo">
+		</div>
+	</footer>
 	<!-- javascript -->
 	<script type="text/javascript" src="script.js"></script>
 </body>
